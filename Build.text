@@ -1,0 +1,26 @@
+ParticleRealmSimulator:
+pyinstaller --onefile --windowed `
+  --hidden-import=numpy `
+  --hidden-import=numpy.core._multiarray_umath `
+  --hidden-import=numpy.core._dtype_ctypes `
+  --hidden-import=PyQt5.QtCore `
+  --hidden-import=PyQt5.QtGui `
+  --hidden-import=PyQt5.QtWidgets `
+  --hidden-import=pyqtgraph `
+  --hidden-import=OpenGL `
+  --name "Particle Realm Simulator" `
+  --icon "Icon1-ico.ico" `
+  ParticleRealmSimulator.py
+CosmicEvolutionSimulator:
+pyinstaller --onefile --windowed `
+  --hidden-import=numpy `
+  --hidden-import=numpy.core._multiarray_umath `
+  --hidden-import=numpy.core._dtype_ctypes `
+  --hidden-import=PyQt5.QtCore `
+  --hidden-import=PyQt5.QtGui `
+  --hidden-import=PyQt5.QtWidgets `
+  --hidden-import=pyqtgraph `
+  --hidden-import=OpenGL `
+  --name "Cosmic Evolution Simulator" `
+  --icon "Icon2-ico.ico" `
+  CosmicEvolutionSimulator.py
